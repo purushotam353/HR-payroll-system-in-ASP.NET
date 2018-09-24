@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Hr.master.cs" Inherits="HRPAYROLL.Hr" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Models/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="Models/jquery/jquery-3.1.1.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <link href="mycss/sidebar.css" rel="stylesheet" />
+    <link href="mycss/StyleSheet2.css" rel="stylesheet" />
+    <link href="mycss/StyleSheet1.css" rel="stylesheet" />
+    <link href="mycss/loginpics.css" rel="stylesheet" />
+    <script src="Models/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form2" runat="server">
+        <div class="container-fluid">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid" id="header1">
+                    <div class="navbar-header" id="header2">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/hrp-logo-med2.png" id="logo" />
+
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+
+
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+         
+
+
+     <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Hr Panel
+                    </a>
+                </li>
+                 <li>
+                     <div id="pic" >
+
+                      <img id="img" src="#" runat="server" height="80" width="70"  class="img-circle" />
+                         </div>
+
+                 </li>
+                <li>
+                    <a href="HomeHR.aspx">Home</a>
+                </li>
+               
+                    <li><a href="applyleavehr.aspx">Applyed Leave From Employee</a></li>
+                    <li><a href="paysalary.aspx">Pay salary</a></li>
+                    <li><a href="manageSaL.aspx">Salary Manage </a></li>
+                   <li><a href="showpaidsalary.aspx">Show paid salary</a></li> 
+                 <li><a href="#">Show Employee Attendance</a></li> 
+                <li><a href="#">Show Feedback</a></li> 
+                
+                   <li>&nbsp&nbsp&nbsp&nbsp<asp:Button ID="Button1" class="btn btn-link"  runat="server" Text="Logout" OnClick="Button1_Click1" /></li>
+               
+            </ul>
+            
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+            <div class="container" id="divmain">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                       
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+               </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    </div>
+    
+    </form>
+</body>
+</html>

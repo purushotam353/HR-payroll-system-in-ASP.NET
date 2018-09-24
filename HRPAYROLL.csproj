@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBDCD740-B432-402A-AF69-A6C2A048A50E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRPAYROLL</RootNamespace>
+    <AssemblyName>HRPAYROLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>itextsharp-all-5.5.10\itextsharp.xfaworker-dll-5.5.10\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="ademp.aspx" />
+    <Content Include="ADMINLOGIN.aspx" />
+    <Content Include="adminsub1.aspx" />
+    <Content Include="applyforleave.aspx" />
+    <Content Include="applyleavehr.aspx" />
+    <Content Include="attendance.aspx" />
+    <Content Include="changepassword.aspx" />
+    <Content Include="contactus.aspx" />
+    <Content Include="editemp.aspx" />
+    <Content Include="edithr.aspx" />
+    <Content Include="editmanageSal.aspx" />
+    <Content Include="employeefront.aspx" />
+    <Content Include="EMPLOYEELOGIN.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="Event.aspx" />
+    <Content Include="gallery.aspx" />
+    <Content Include="HomeADMIN.aspx" />
+    <Content Include="HomeEMPLOYEE.aspx" />
+    <Content Include="HomeHR.aspx" />
+    <Content Include="hrerror.aspx" />
+    <Content Include="HRLOGIN.aspx" />
+    <Content Include="HTMLTmplate\Receipt.html" />
+    <Content Include="HTMLTmplate\images\abi %281%29.png" />
+    <Content Include="HTMLTmplate\images\abi %282%29.jpg" />
+    <Content Include="HTMLTmplate\images\bigstock-Business-People-In-A-Meeting-57571778.jpg" />
+    <Content Include="HTMLTmplate\images\4guysfromrolla.gif" />
+    <Content Include="HTMLTmplate\images\download %281%29.png" />
+    <Content Include="HTMLTmplate\images\download %282%29.png" />
+    <Content Include="HTMLTmplate\images\download %283%29.png" />
+    <Content Include="HTMLTmplate\images\download %284%29.png" />
+    <Content Include="HTMLTmplate\images\download %285%29.png" />
+    <Content Include="HTMLTmplate\images\download.jpg" />
+    <Content Include="HTMLTmplate\images\download.png" />
+    <Content Include="HTMLTmplate\images\Fantasia Painting%2838%29.jpg" />
+    <Content Include="HTMLTmplate\images\Fantasia Painting%2839%29.jpg" />
+    <Content Include="HTMLTmplate\images\Fantasia Painting%2840%29.jpg" />
+    <Content Include="HTMLTmplate\images\Fantasia Painting%2843%29.jpg" />
+    <Content Include="HTMLTmplate\images\Fantasia Painting%2844%29.jpg" />
+    <Content Include="HTMLTmplate\images\hrp-logo-med2.png" />
+    <Content Include="HTMLTmplate\images\images %281%29.jpg" />
+    <Content Include="HTMLTmplate\images\images %282%29.jpg" />
+    <Content Include="HTMLTmplate\images\images %283%29.jpg" />
+    <Content Include="HTMLTmplate\images\images %284%29.jpg" />
+    <Content Include="HTMLTmplate\images\images %285%29.jpg" />
+    <Content Include="HTMLTmplate\images\images.jpg" />
+    <Content Include="HTMLTmplate\images\loc.png" />
+    <Content Include="HTMLTmplate\images\ps.jpg" />
+    <Content Include="HTMLTmplate\images\puru.jpg" />
+    <Content Include="HTMLTmplate\images\P_20150319_133028.jpg" />
+    <Content Include="HTMLTmplate\images\sitting-positions-2.jpg" />
+    <Content Include="HTMLTmplate\images\ti.jpg" />
+    <Content Include="js\image.js" />
+    <Content Include="js\sidebar.js" />
+    <Content Include="manageSaL.aspx" />
+    <Content Include="mycss\bar.css" />
+    <Content Include="mycss\gallery.css" />
+    <Content Include="mycss\icon.css" />
+    <Content Include="mycss\loginpics.css" />
+    <Content Include="mycss\sidebar.css" />
+    <Content Include="mycss\StyleSheet2.css" />
+    <Content Include="paysalary.aspx" />
+    <Content Include="paysalary2.aspx" />
+    <Content Include="show.aspx" />
+    <Content Include="showemp.aspx" />
+    <Content Include="showempattandancde.aspx" />
+    <Content Include="showerror.aspx" />
+    <Content Include="showpaidsalary.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="Models\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="Models\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Models\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="Models\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="Models\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Models\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Models\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Models\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="HR.Master" />
+    <Content Include="EMPLOYEE.Master" />
+    <Content Include="ADMIN.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Models\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="Models\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="Models\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="Models\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="Models\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Models\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="Models\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="Models\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="Models\jquery\jquery-3.1.1.min.js" />
+    <Content Include="mycss\StyleSheet1.css" />
+    <Content Include="StyleSheet.css" />
+    <Content Include="team.aspx" />
+    <Content Include="update.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ademp.aspx.cs">
+      <DependentUpon>ademp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ademp.aspx.designer.cs">
+      <DependentUpon>ademp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.Master.cs">
+      <DependentUpon>ADMIN.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN.Master.designer.cs">
+      <DependentUpon>ADMIN.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINLOGIN.aspx.cs">
+      <DependentUpon>ADMINLOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINLOGIN.aspx.designer.cs">
+      <DependentUpon>ADMINLOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminsub1.aspx.cs">
+      <DependentUpon>adminsub1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminsub1.aspx.designer.cs">
+      <DependentUpon>adminsub1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="applyforleave.aspx.cs">
+      <DependentUpon>applyforleave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="applyforleave.aspx.designer.cs">
+      <DependentUpon>applyforleave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="applyleavehr.aspx.cs">
+      <DependentUpon>applyleavehr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="applyleavehr.aspx.designer.cs">
+      <DependentUpon>applyleavehr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="attendance.aspx.cs">
+      <DependentUpon>attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="attendance.aspx.designer.cs">
+      <DependentUpon>attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.aspx.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changepassword.aspx.designer.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs" />
+    <Compile Include="contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dataclass.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="editemp.aspx.cs">
+      <DependentUpon>editemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editemp.aspx.designer.cs">
+      <DependentUpon>editemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edithr.aspx.cs">
+      <DependentUpon>edithr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edithr.aspx.designer.cs">
+      <DependentUpon>edithr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editmanageSal.aspx.cs">
+      <DependentUpon>editmanageSal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editmanageSal.aspx.designer.cs">
+      <DependentUpon>editmanageSal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="employeefront.aspx.cs">
+      <DependentUpon>employeefront.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="employeefront.aspx.designer.cs">
+      <DependentUpon>employeefront.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEE.Master.cs">
+      <DependentUpon>EMPLOYEE.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE.Master.designer.cs">
+      <DependentUpon>EMPLOYEE.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEELOGIN.aspx.cs">
+      <DependentUpon>EMPLOYEELOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEELOGIN.aspx.designer.cs">
+      <DependentUpon>EMPLOYEELOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event.aspx.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event.aspx.designer.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeADMIN.aspx.cs">
+      <DependentUpon>HomeADMIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeADMIN.aspx.designer.cs">
+      <DependentUpon>HomeADMIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEMPLOYEE.aspx.cs">
+      <DependentUpon>HomeEMPLOYEE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeEMPLOYEE.aspx.designer.cs">
+      <DependentUpon>HomeEMPLOYEE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeHR.aspx.cs">
+      <DependentUpon>HomeHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeHR.aspx.designer.cs">
+      <DependentUpon>HomeHR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR.Master.cs">
+      <DependentUpon>HR.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR.Master.designer.cs">
+      <DependentUpon>HR.Master</DependentUpon>
+    </Compile>
+    <Compile Include="hrerror.aspx.cs">
+      <DependentUpon>hrerror.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hrerror.aspx.designer.cs">
+      <DependentUpon>hrerror.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRLOGIN.aspx.cs">
+      <DependentUpon>HRLOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRLOGIN.aspx.designer.cs">
+      <DependentUpon>HRLOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="List.cs" />
+    <Compile Include="manageSaL.aspx.cs">
+      <DependentUpon>manageSaL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manageSaL.aspx.designer.cs">
+      <DependentUpon>manageSaL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paysalary.aspx.cs">
+      <DependentUpon>paysalary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paysalary.aspx.designer.cs">
+      <DependentUpon>paysalary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paysalary2.aspx.cs">
+      <DependentUpon>paysalary2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paysalary2.aspx.designer.cs">
+      <DependentUpon>paysalary2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="show.aspx.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="show.aspx.designer.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showemp.aspx.cs">
+      <DependentUpon>showemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showemp.aspx.designer.cs">
+      <DependentUpon>showemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showempattandancde.aspx.cs">
+      <DependentUpon>showempattandancde.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showempattandancde.aspx.designer.cs">
+      <DependentUpon>showempattandancde.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showerror.aspx.cs">
+      <DependentUpon>showerror.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showerror.aspx.designer.cs">
+      <DependentUpon>showerror.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showpaidsalary.aspx.cs">
+      <DependentUpon>showpaidsalary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showpaidsalary.aspx.designer.cs">
+      <DependentUpon>showpaidsalary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="team.aspx.cs">
+      <DependentUpon>team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="team.aspx.designer.cs">
+      <DependentUpon>team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Temp.cs" />
+    <Compile Include="update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Weather.cs" />
+    <Compile Include="WeatherInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="profile pic\employee profile\" />
+    <Folder Include="profile pic\hr profile\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4746</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4746/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
